@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - boArd</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Poppins Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap">
+</head>
+<body class="bg-black font-poppins flex justify-center items-center min-h-screen">
+
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full flex justify-between items-center p-4 bg-black shadow-lg z-10">
+        <div class="logo pl-16">
+            <a href="index.html">
+                <img src="assets/logo/proudlogo.png" alt="Proud Logo" class="w-10">
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Signup Container) -->
+    <div class="hero-container flex gap-8 p-4 w-full justify-center items-center">
+        
+        <!-- Signup Form Container -->
+        <div class="signup-container p-8 rounded-xl shadow-lg w-full max-w-md">
+            <form class="signup-form space-y-6" action="#" method="post">
+                <p class="text-center text-xl text-gray-200">Create your account</p>
+                
+                <!-- Username Input -->
+                <div class="form-group">
+                    <input type="text" id="username" name="username" placeholder="Username" required class="w-full p-4 text-white bg-transparent border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                </div>
+
+                <!-- Email Input -->
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required class="w-full p-4 text-white bg-transparent border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                </div>
+
+                <!-- Password Input -->
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Password" required class="w-full p-4 text-white bg-transparent border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                </div>
+
+                <!-- Confirm Password Input -->
+                <div class="form-group">
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required class="w-full p-4 text-white bg-transparent border border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500">
+                </div>
+
+                <!-- Role Selection -->
+                <div class="form-group">
+                    <label class="text-white">Role</label>
+                    <div class="flex items-center space-x-6">
+                        <label for="user" class="text-white flex items-center space-x-2">
+                            <input type="radio" id="user" name="role" value="user" class="text-white">
+                            <span>User</span>
+                        </label>
+                        <label for="artist" class="text-white flex items-center space-x-2">
+                            <input type="radio" id="artist" name="role" value="artist" class="text-white">
+                            <span>Artist</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Signup Button -->
+                <button type="submit" class="w-full py-3 bg-gray-900 text-white rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500 transition duration-300 ease-in-out">Signup</button>
+                
+                <!-- Login Link -->
+                <div class="text-center">
+                    <p class="text-sm text-gray-400">Already have an account? <a href="login.html" class="text-red-500 hover:text-red-400">Login</a></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - boArd</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css">
+    <!-- Poppins Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #080808;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px; 
+            background-color: #000; 
+            color: #fcf9f9; 
+            box-shadow: 0 1px 1px rgba(3, 3, 3, 0.1); 
+            z-index: 1000; 
+        }
+        .logo img {
+            width: 40px;
+            padding-left: 60px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding-right: 60px;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #fafafa;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            color: rgb(199, 15, 15);
+        }
+        main {
+            min-height: 100vh;
+        }
+        .hero-container {
+            display: flex;
+            gap: 200px;
+            height: auto;
+            background-color: #080808;
+        }
+        .login-container {
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            /* box-shadow: 0 0 10px rgba(21, 21, 21, 0.1); */
+        }
+        .signup-container {
+            width: 350px;
+            padding: 20px;
+            border-radius: 10px;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        }
+        .login-form h2, .signup-form h2 {
+            color: #555;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-form p, .signup-form p {
+            color: #555;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group input {
+            width: 94%;
+            padding: 10px; 
+            background: transparent;
+            color: #fafafa;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            /* box-shadow: 2px 1px 1px rgba(3, 3, 3, 0.1);  */
+            z-index: 1000; 
+        }
+        .btn {
+            font-size: medium;
+            width: 100%;
+            padding: 10px;
+            /* background-color: #000000; */
+            color: #555;
+            text-align: center;
+            /* border: none; */
+            /* border-radius: 5px; */
+            cursor: pointer;
+            /* box-shadow: 2px 1px 1px rgba(3, 3, 3, 0.1); */
+    /* z-index: 1000; */
+            /* transition: background-color 0.3s ease; */
+        }
+
+        .btn:hover {
+            color: #e8e5e5;    
+        }
+
+        .btn2 {
+            width: 100%;
+            padding: 10px;
+            color: #030303;
+            text-align: center;
+            place-items: center;
+            cursor: pointer;
+            border-radius: 8px;
+            background-color:#fff;
+            border: 1px solid #080808;
+        }
+        .btn2:hover {
+            background-color:#b6b1b1;
+        }
+        footer {
+            background-color: #0a0a0a;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="home.html">
+                <img src="assests/logo/proudlogo.png" alt="Proud Logo" class="logo">
+            </a>
+        </div>
+    </nav>
+
+    <div class="hero-container">
+        <div class="login-container">
+            <form class="login-form" method="post">
+                <p>Welcome!!</p>
+                <div class="form-group">
+                    <input type="text" id="email" name="email" placeholder="Email address" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <p><a type="submit" class="btn">[ Login here ]</a></p>
+                <hr>
+                <a href="signup.html">
+                    <button class="btn2">Create Account</button>
+                  </a>
+                  
+            </form>
+        </div>
+
+        <!-- <div class="signup-container">
+            <form class="signup-form" action="#" method="post">
+                <p>Create your account</p>
+                <div class="form-group">
+                    <input type="text" id="username" name="username" placeholder="username" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+                </div>
+                <p><button type="submit" class="btn">Signup</button></p>
+            </form>
+        </div> -->
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

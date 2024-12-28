@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proud - Your Music, Your Way</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap">
+    <script>
+        // Function to toggle the mobile menu
+        document.addEventListener("DOMContentLoaded", function () {
+            const menuButton = document.querySelector(".menu-button");
+            const menu = document.querySelector(".mobile-menu");
+            
+            menuButton.addEventListener("click", () => {
+                menu.classList.toggle("hidden");
+            });
+        });
+    </script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-black text-white fixed w-full z-10 top-0 shadow-lg">
+        <div class="container mx-auto flex items-center justify-between px-4 py-2">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/logo/proudlogo.png" alt="Proud Logo" class="w-10">
+            </a>
+            <!-- Hamburger Icon -->
+            <button class="menu-button lg:hidden text-white focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Desktop Menu -->
+            <ul class="hidden lg:flex items-center space-x-6">
+                <li><a href="index.html" class="hover:text-red-500">Home</a></li>
+                <li><a href="artist.html" class="hover:text-red-500">Artist</a></li>
+                <li><a href="album.html" class="hover:text-red-500">Albums</a></li>
+                <li><a href="merch.html" class="hover:text-red-500">Merch Store</a></li>
+                <li><a href="#about" class="hover:text-red-500">About</a></li>
+                <li><a href="mydash.html" class="hover:text-red-500">My Dashboard</a></li>
+                <li><a href="#" class="hover:text-red-500"><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="login.html" class="hover:text-red-500"><i class="fas fa-user"></i></a></li>
+            </ul>
+        </div>
+        <!-- Mobile Menu -->
+        <ul class="mobile-menu hidden lg:hidden bg-black text-white space-y-4 px-4 py-6">
+            <li><a href="index.html" class="block hover:text-red-500">Home</a></li>
+            <li><a href="artist.html" class="block hover:text-red-500">Artist</a></li>
+            <li><a href="album.html" class="block hover:text-red-500">Albums</a></li>
+            <li><a href="merch.html" class="block hover:text-red-500">Merch Store</a></li>
+            <li><a href="#about" class="block hover:text-red-500">About</a></li>
+            <li><a href="mydash.html" class="block hover:text-red-500">My Dashboard</a></li>
+            <li><a href="#" class="block hover:text-red-500"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="login.html" class="block hover:text-red-500"><i class="fas fa-user"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-container h-screen bg-gray-900 text-white flex justify-center items-center relative">
+            <img src="assets/images/6.png" alt="Hero Image" class="absolute inset-0 w-full h-full object-cover opacity-50">
+            <div class="relative z-10 text-center px-6 md:px-0">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                    <span class="block">"Empower Creativity"</span>
+                    <span class="block mt-2 text-red-500">"Support. Celebrate. Earn."</span>
+                </h1>
+                <div class="mt-8">
+                    <a href="login.html" class="text-red-500 text-lg border border-red-500 px-6 py-2 rounded-full hover:bg-red-500 hover:text-white transition duration-300 ease-in-out">
+                        Create Account
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Artist Section -->
+        <section id="about" class="artist-container bg-black py-20 text-center">
+            <div class="container mx-auto">
+                <h1 class="text-5xl font-extrabold text-gray-200 leading-tight">
+                    Celebrating Creativity, <span class="text-red-500">Empowering Artists</span>
+                </h1>
+                <img src="assets/images/hero3.png" alt="Artists" class="w-full h-64 object-cover rounded mb-8">
+                <p class="mt-6 text-gray-300 text-lg md:text-xl max-w-3xl mx-auto">
+                    Proud connects creators and their audiences, giving artists a platform to share their passion while earning recognition and support. Be part of the movement that uplifts artistry and creativity, one creation at a time.
+                </p>
+                <div class="mt-8">
+                    <a href="artist.html" class="text-red-500 text-lg border border-red-500 px-6 py-2 rounded-full hover:bg-red-500 hover:text-white transition duration-300 ease-in-out">
+                        View Artists
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-10">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="font-bold text-lg">Contact</h4>
+                <p>Lokanthali, Bhaktapur 05</p>
+                <p>9876543210</p>
+                <p>proud.nepal@info.com</p>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg">Useful Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">About</a></li>
+                    <li><a href="#" class="hover:underline">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold text-lg">Subscribe</h4>
+                <p>Subscribe to our newsletter:</p>
+                <form action="#" class="mt-4">
+                    <input type="text" placeholder="Email Address" class="px-4 py-2 w-full rounded mb-4">
+                    <button type="submit" class="bg-red-500 text-white px-6 py-2 rounded hover:bg-red-600">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-gray-700 pt-6 text-center">
+            <p>&copy; 2024, All Rights Reserved.</p>
+        </div>
+        <div class="flex justify-center space-x-4 mt-4">
+            <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-tiktok"></i></a>
+            <a href="#" class="text-white hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
