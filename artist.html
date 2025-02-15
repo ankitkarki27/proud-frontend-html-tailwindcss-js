@@ -7,30 +7,17 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap">
-    <script>
-        // Function to toggle the mobile menu
-        document.addEventListener("DOMContentLoaded", function () {
-            const menuButton = document.querySelector(".menu-button");
-            const menu = document.querySelector(".mobile-menu");
-            
-            menuButton.addEventListener("click", () => {
-                menu.classList.toggle("hidden");
-            });
-        });
-    </script>
+   <script src="assets/script.js"></script>
 </head>
 <body class="bg-gray-100 font-sans">
-    <!-- Navbar -->
     <nav class="bg-black text-white fixed w-full z-10 top-0 shadow-lg">
         <div class="container mx-auto flex items-center justify-between px-4 py-2">
             <a href="index.html" class="flex items-center">
                 <img src="assets/logo/proudlogo.png" alt="Proud Logo" class="w-10">
             </a>
-            <!-- Hamburger Icon -->
             <button class="menu-button lg:hidden text-white focus:outline-none">
                 <i class="fas fa-bars"></i>
             </button>
-            <!-- Desktop Menu -->
             <ul class="hidden lg:flex items-center space-x-6">
                 <li><a href="index.html" class="hover:text-red-500">Home</a></li>
                 <li><a href="artist.html" class="hover:text-red-500">Artist</a></li>
@@ -42,7 +29,6 @@
                 <li><a href="login.html" class="hover:text-red-500"><i class="fas fa-user"></i></a></li>
             </ul>
         </div>
-        <!-- Mobile Menu -->
         <ul class="mobile-menu hidden lg:hidden bg-black text-white space-y-4 px-4 py-6">
             <li><a href="index.html" class="block hover:text-red-500">Home</a></li>
             <li><a href="artist.html" class="block hover:text-red-500">Artist</a></li>
@@ -54,39 +40,51 @@
             <li><a href="login.html" class="block hover:text-red-500"><i class="fas fa-user"></i></a></li>
         </ul>
     </nav>
-
     <main>
         <section class="py-16 bg-black">
             <div class="container mx-auto text-center">
-                <!-- Title -->
                 <h1 class="text-4xl text-white font-bold border-b-4 border-red-500 inline-block pb-2 mb-10 mt-16 uppercase">Artists</h1>
-
-                <!-- Artist Grid -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-                    <!-- Artist Card -->
+                 
                     <div class="text-center">
                         <div class="relative group">
                             <img src="assets/artists/1.jpg" alt="Artist 1" class="w-44 h-44 mx-auto rounded-full transition-transform duration-300 group-hover:scale-110">
                         </div>
-                        <h2 class="text-xl font-semibold mt-4">Hello</h2>
+                        <h2 class="text-xl text-white font-semibold mt-4">Rammm</h2>
                         <p class="text-sm text-gray-400">Hiphop, Rap</p>
                     </div>
 
-                    <!-- Artist Card -->
+                 
                     <div class="text-center">
                         <div class="relative group">
                             <img src="assets/artists/1.jpg" alt="Artist 2" class="w-44 h-44 mx-auto rounded-full transition-transform duration-300 group-hover:scale-110">
                         </div>
-                        <h2 class="text-xl font-semibold mt-4">Hey</h2>
+                        <h2 class="text-xl text-white font-semibold mt-4">Nasir</h2>
                         <p class="text-sm text-gray-400">Pop, Rock</p>
                     </div>
 
-                    <!-- Repeat for more artist cards as needed -->
+                    <div class="text-center">
+                        <div class="relative group">
+                            <img src="assets/artists/1.jpg" alt="Artist 1" class="w-44 h-44 mx-auto rounded-full transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <h2 class="text-xl text-white font-semibold mt-4">Nas</h2>
+                        <p class="text-sm text-gray-400">Hiphop, Rap</p>
+                    </div>
+
+                 
+                    <div class="text-center">
+                        <div class="relative group">
+                            <img src="assets/artists/1.jpg" alt="Artist 2" class="w-44 h-44 mx-auto rounded-full transition-transform duration-300 group-hover:scale-110">
+                        </div>
+                        <h2 class="text-xl text-white font-semibold mt-4">Ganggang</h2>
+                        <p class="text-sm text-gray-400">Pop, Rock</p>
+                    </div>
+
+                
                 </div>
             </div>
         </section>
     </main>
-      <!-- Footer -->
       <footer class="bg-black text-white py-10">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
